@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>na dwuje</h1>
+    <table>
+        <thead>
+            <th>Gatunek</th>
+            <th>Tytuł filmu</th>
+            <th>Rok produkcji</th>
+            <th>Ocena (1-10)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dramat</td>
+                <td>Get Rich or Die Tryin’: Historia 50 Centa</td>
+                <td>2005</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Akcja</td>
+                <td>Skok stulecia</td>
+                <td>2018</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Tyler Rake 2</td>
+                <td>2023</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Blue Beetle</td>
+                <td>2023</td>
+                <td>6</td>
+            </tr>
+        </tbody>    
+    </table> 
+    <h1>na truje</h1>
+    <img height="120px" src="https://wierszykidladzieci.net.pl/wp-content/uploads/2021/11/Kotek-wiersz-Juliana-Tuwima.jpg" alt="kitku"><br>
+    <iframe width="360" height="202.5" src="https://www.youtube.com/embed/JZBKm2BVUL4?autoplay=1&mute=1" allow="autoplay" allowfullscreen></iframe><br>
+    <h5>*wyciszone bo w google chrome autoplay działa tylko na wyciszeniu</h5>
+    <h1>na czwure</h1>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100038756511179%2Fvideos%2F1039629600784403%2F&show_text=false&width=267&t=0" width="150" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0"></iframe>
+    <h1>na piontke może być taka ręką</h1>
+    <audio src="./nyan.mp3" controls autoplay></audio>
+    <h5>*tu się nie odpala pomimo atrybutu autoplay bo można odpalic audio dopiero po pierwszej interakcji np. kliknięcie w ekran i na to kliknięcie dodac event który odpala audio</h5>
+    <style>
+        /* usuniecie marginesu dla wszystkich elementow */
+        * {
+            margin: 0;
+        }
+        /* kolorowe tło dla całej strony */
+        body {
+            background-color: cornflowerblue;
+        }
+        /* style tabeli */
+        table {
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid grey;
+            border-radius: 5px;
+            background: #000120;
+            width: 50%;
+            color: grey;
+            position: relative;
+        }
+        /* style naglowkow tabeli */
+        th {
+            display: table-cell;
+            vertical-align: inherit;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* style komorek */
+        td {
+            border: solid 0.5px grey;
+        }
+        /* kolor dla dramatów */
+        tbody tr:nth-child(1) {
+            background-color: #ff151575;
+        }
+        /* kolor dla filmów akcji */
+        tbody tr:nth-child(2),tr:nth-child(3),tr:nth-child(4) {
+            background-color: #15b01575;
+        }
+        /* styl nagłowka stopnia pierwszego i piatego */
+        h1, h5 {
+            text-align: center;
+        }
+        /* styl ramek video/audio/zdjec */
+        iframe, audio, img {
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+    </style>
+</body>
+</html>
+<!--
+    Autor: Julia Ożga
+-->
